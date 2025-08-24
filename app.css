@@ -1,0 +1,54 @@
+body {
+    background-color: #222831;
+    font-family: 'Nothing You Could Do';
+}
+
+#navbar {
+    background-color: #948979;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#navbar .nav-link {
+    color: #F5F5F7;
+}
+
+#navbar .nav-link:hover {
+    color: #DCCFC0;
+}
+
+#navbar .navbar-brand {
+    color: #393E46;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar.scrolled {
+    background-color: #DCCFC0;
+    transition: background 500ms ;
+}
+
+#title-head {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.blurb h2 {
+    color: #dfd0b8;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color:#dfd0b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+@media (max-width: 1200px) {
+    #title-head {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}

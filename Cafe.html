@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cafe Boostrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> Neiru`Caffee</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          a
+          ria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Coffee</a>
+            <a class="nav-link" href="#Desserts">Desserts</a>
+            <a class="nav-link" href="#Tea">Tea</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid px-0">
+      <div class="row align-items-center content" id="Coffee">
+        <div class="col-lg-6" style="color: #dfd0b8" id="title-head">
+          <div class="text-center d-none d-lg-block">
+            <h3>Espresso ` Macchiato ` Cappucino</h3>
+          </div>
+          <div class="text-center d-none d-lg-block">
+            <h2>Latte ` Mocha</h2>
+          </div>
+          <div class="text-center d-none d-lg-block">
+            <h1>Coffee</h1>
+          </div>
+          <div class="text-center d-none d-lg-block">
+            <h2>Cortado ` Lungo</h2>
+          </div>
+          <div class="text-center d-none d-lg-block">
+            <h3>Americano ` Ristretto ` Flat White</h3>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/coffee2.jpg" width="800" alt="..." />
+        </div>
+      </div>
+
+      <div class="row align-items-center" id="Desserts">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="img/Dessert.jpg" width="800" alt="..." />
+        </div>
+
+        <div class="col-md-6 text-center order-1 order-md2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg8 blurb pt-3">
+              <h2>Desserts</h2>
+              <img
+                src="img/Tiramisu.jpg"
+                height="200"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Exercitationem vitae consequuntur temporibus accusantium, in
+                magni deleniti voluptates possimus. Aperiam modi praesentium
+                vitae sit non a saepe rerum error, voluptates voluptatibus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center" id="Tea">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="img/Tea1.jpg" width="800" alt="..." />
+        </div>
+
+        <div class="col-md-6 text-center">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg8 blurb pt-3">
+              <h2>Tea</h2>
+              <img
+                src="img/Black_Tea.jpg"
+                height="200"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Exercitationem vitae consequuntur temporibus accusantium, in
+                magni deleniti voluptates possimus. Aperiam modi praesentium
+                vitae sit non a saepe rerum error, voluptates voluptatibus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          let $nav = $("#navbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  </body>
+</html>
